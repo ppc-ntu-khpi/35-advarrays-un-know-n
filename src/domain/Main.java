@@ -1,11 +1,3 @@
-# Практична робота "Поглиблене використання масивів"
-
-## Завдання 4
->Знайти друге за величиною число у матриці розміром N x M
-
-**Код файлу** ```Main.java```**:**
-
-```java
 package domain;
 
 /**
@@ -54,30 +46,3 @@ public class Main {
     }
 
 }
-```
-
-**Код файлу** ```MainTest.java```**:**
-```java
-import domain.Main;
-
-import java.util.Arrays;
-
-public class MainTest {
-    /**
-     * This is the main method that generates a matrix of size N x M, prints it to the console, and finds the second-largest number in the matrix.
-     * @param args the command-line arguments
-     */
-    public static void main(String[] args) {
-        int[][] matrix = Main.generateMatrix(5, 7);
-        System.out.println("Matrix:");
-        for (int[] row : matrix) {
-            System.out.println(Arrays.toString(row));
-        }
-        int secondLargest = Main.findSecondLargest(matrix);
-        System.out.println("Second largest number: " + secondLargest);
-    }
-}
-```
-
-***Результат:***  
-![](https://github.com/ppc-ntu-khpi/35-advarrays-un-know-n/blob/master/images/result.png)
